@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" 
+          integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" 
+          crossorigin="anonymous">
+        <link rel="sytlesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap">
+       
+        <script src="https://kit.fontawesome.com/77bcdf2e57.js" crossorigin="anonymous"></script>
+        <!--meta-->
+        <script src="index.js"></script>
+        <meta charset="UTF-8">
+        <meta name= "viewport" content="width=device-width" initial scale="1.0">
+        <title>Dagogo Uranta Portfolio</title>
+
+    </head>
+    <body>
+   <div class="body-border">
+     <header>
+         <div class="logo">
+            <!-- try and create a logo for you similar to devjane, something like full stack jack-->
+            <img src="img/website-logo-black.png" alt= "">
+         </div>
+        
+         <button class="nav-toggle" aria-label ="toggle navigation">
+         <span class="hamburger" ></span>
+         </button>
+         <nav class="nav">
+             <ul class="nav__list">
+               <li class= "nav__item"><a href="#home" class= "nav_link">Home</a></li>
+               <li class= "nav__item"><a href="#services" class= "nav_link">My Services</a></li>    
+               <li class= "nav__item"><a href="#about" class= "nav_link">About me</a></li>
+               <li class= "nav__item"><a href="#work" class= "nav_link">My Work</a></li>
+               <li class= "nav__item"><a href="#request" class= "nav_link">Leave a Request</a></li>
+             </ul> 
+
+         </nav>
+     </header>
+
+     <!--Introduction-->
+     <section class="intro" id="home">
+         <h1 class="section__title section__title--intro">
+             Hi, I am <strong class="my-name">Dagogo Uranta</strong>
+         </h1>
+         <p class="section__subtitle section__subtitle--intro">Full-Stack Developer.</p>
+         <!-- crop that picture of you in front of the beatles-->
+         <img src="img/full-body-Dagogo.PNG" alt="a picture of Dagogo smiling" class="intro__img">
+     </section>
+    
+
+     <!-- My Services-->
+     <section class="my-services" id="services">
+        <h2 class="section__title section__title--services">My Services</h2>
+        
+        <div class="services">
+           <div class ="service">
+              <h3 class= "service__lead">Web Design </h3>
+              <p>Get stunning and simple webpages to easily convey your message to your clients.
+                 Whether it's a tribute page,portfolio, product landing page, busines page or blog,
+                 you are sure to get a high quality user interface from me! </p>
+
+                <p> From page transitions that catch your viewer's eye to simple animations to give your website that extra appeal it needs, 
+                    I have your needs covered.
+                 Finally, should you need to update your design in future, I use Sass/CSS variables 
+                 to keep code keep code well organized
+                 and modular, making it more accessible to developers.
+              </p>
+           </div>  <!--write about UI and react development,hosting too, static webpages, using your understanding of the DOM -->
+
+           <div class ="service">
+              <h3 class= "service__lead">Logic for APIs</h3>
+              <p >You've made your front-end and now you need to handle information coming in from
+                  your clients, what now ? Well using Node js, I provide a range of services to deal with your 
+                  API endpoints. I provide solutions to a range of issues such as:
+                  <ul>
+                      <li>Storing, updating and deleting information from the client side to your database</li>
+                 <br>     <li> Authorization of users and 3rd party apps to login and perform actions , via OAuth </li>
+                  <br>    <li> Authentication using JWT for each of your users sessions </li>
+                  <br>     <li>Linking your website to 3rd party payment services such as Paypal, flutterwave etc.</li>
+                  </ul>
+             
+
+
+             </p>
+           </div> <!-- write about business logic, API creation, node js etc etc-->
+              
+           <div class ="service">
+              <h3 class= "service__lead">Database Setup <br> </h3>
+              <p> Using MongoDB, I am able to create databases, and structure your client data into shards,
+                  to allow for easy horizontal scaling, as your site grows in popularity! Your database will also be replicated into secondary databeses for robustness of data storage. This will
+                   guarantee that your site still functions properly, should your primary database be lost.</p> <!-- write about database mgt, basic sharding -->
+
+            </div>     
+     </div>
+     
+     <a href="#work" class= "btn">My Work</a>
+   
+    </section>
+     
+   <!-- About me -->
+     <section class="about-me" id="about">
+
+    <h2 class="section__title section__title--about">Who I am</h2>
+    <p class="section__subtitle section__subtitle--about">Designer & Developer based in Lagos, Nigeria.</p>
+     
+    <div class="about-me__body">
+            <p>I am a developer who uses the M-E-R-N technology stack (MongoDB, Express, React, and Node JS) to bring to life 
+                responsove, high quality web apps that guarantee a fantastic user experience.
+             </p>
+            
+            <p>
+            My skills include: <br>
+            <strong>HTML</strong>,
+            CSS(SaSS, Bootstrap),
+            <strong>Javascript(Object-Oriented and functional programming)</strong>,
+            React JS(state management with Redux),
+            <strong>debbuging</strong>,
+           route handling with Node JS and Express,
+            <strong>version control with Git</strong>,
+            use of the linux command line and 
+            <strong>creation, sharding and replication of databases with MongoDB</strong>
+        </p>
+        
+           In my spare time, I enjoy teaching code to beginners and keeping up with the latest
+           software development trends. I hope you enjoy working with me!
+
+          
+
+    </div>
+    
+    
+    <img src="img/headshot-Dagogo.JPG" alt="picture of the developer " class="about-me__img">
+   </section>
+    
+   <!-- My Work-->
+   <section class="my-work" id="work">
+       <h2 class="section__title">My work</h2>
+      
+       <div class="section__subtitle section__subtitle--work"><p> A selection of my range of work </p></div>
+       <div class="portfolio">
+          <!--Portfolio item 01-->
+           <a href="individualportfolioitem1.html" class="portfolio__item">
+               <img src="img/portfolio-01.jpg" alt="" class="portfolio__img">
+           </a>
+
+           <!--Portfolio item 02-->
+           <a href="individualportfolioitem1.html" class="portfolio__item">
+                <img src="img/portfolio-02.jpg" alt="" class="portfolio__img">
+            </a>
+
+            <!--Portfolio item 03-->
+           <a href="individualportfolioitem1.html" class="portfolio__item">
+                <img src="img/portfolio-03.jpg" alt="" class="portfolio__img">
+            </a>
+
+            <!--Portfolio item 04-->
+           <a href="individualportfolioitem1.html" class="portfolio__item">
+                <img src="img/portfolio-05.jpg" alt="" class="portfolio__img">
+            </a>
+       </div>
+   </section>
+   
+
+   
+   <section class="leave-a-request"  id="request">
+
+    <h2 >Leave a Request</h2>
+     <br>
+   
+       <div class="sliding-form"> 
+        
+        <p class="request_heading">
+            Leave a Request or Make an Enquiry 
+        </p>
+           
+        <form action=  "https://formspree.io/dagogouranta@gmail.com" method="POST"  id="form-validate">  
+        <div class="name-and-email">
+      
+            <label for="firstname" class="first-name"></label>
+            <input type="text" id="firstname" name="Name" placeholder="Name">
+       
+       <label for="emailaddress" class="email-prompt"></label>
+       <input type="text" id="emailaddress" name="emailaddress" placeholder="Email address">
+       </div>
+
+        
+        <textarea  id="website-description" class="textholder-area" name="website description" rows="2" columns="70"  placeholder="Give a brief desription about the type of website you would like."></textarea>
+        
+        <input type="submit" value="submit" id="btn-variant" class="form-submit"/>
+        
+    </form> 
+    <button class="filetab" id="filetab" >CLOSE</button>
+      </div>
+    
+   
+     
+   
+    
+    
+   
+    
+   </section>
+
+
+
+    <!--Footer, come back and specify the right pages, once youve set them up-->
+    <footer class="footer">
+        <strong>CONTACT ME:</strong> 
+            <br>
+        <a href="mailto:dagogouranta@gmail.com" class="footer-link" >
+            <span > <input type="text"  readonly  id ="clippy" value="dagogouranta@gmail.com"></span>  
+        </a>
+        <span class="clipboard-icon" ><i class="far fa-clipboard" ></i></span>
+        <ul class="social-list">
+            <li class="social-list__item"><a href="https://github.com" class="social-list__link"><i class="fab fa-github"></i></a><div class="slideout"><a href="https://github.com" >github</a></div></li>
+            <li class="social-list__item"><a href="https://linkedin.com" class="social-list__link"><i class="fab fa-linkedin"></i></a><div class="slideout"><a  href="https://linkedin.com">linkedin</a></div></li>
+            <li class="social-list__item"><a href="https://youtube.com" class="social-list__link"> <i class="fab fa-youtube"></i></a><div class="slideout"><a href="https://youtube.com" >youtube</a> </div></li>
+            
+        </ul>
+    </footer>
+</div>
+</body>
+</html>

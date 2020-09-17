@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="style.css">
+       
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" 
+          integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" 
+          crossorigin="anonymous">
+        <link rel="sytlesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap">
+       
+        <script src="https://kit.fontawesome.com/77bcdf2e57.js" crossorigin="anonymous"></script>
+        <!--meta-->
+        <script src="portfolio-item.js"></script>
+        <meta charset="UTF-8">
+        <meta name= "viewport" content="width=device-width" initial scale="1.0">
+        <title>authentication project</title>
+        
+    </head>
+    <body>
+     <div class="project-visual">
+     <header>
+         <div class="logo">
+            <!-- try and create a logo for you similar to devjane, something like full stack jack-->
+            <img src="img/website-logo-black.png" alt= "">
+        
+        
+         <button class="nav-toggle" aria-label ="toggle navigation">
+             <span class="hamburger"></span>
+         </button>
+         <nav class="nav">
+             <ul class="nav__list">
+               <li class= "nav__item"><a href="index.html" class= "nav_link">Home</a></li>
+               <li class= "nav__item"><a href="index.html#services" class= "nav_link">My Services</a></li>    
+               <li class= "nav__item"><a href="index.html#about" class= "nav_link">About me</a></li>
+               <li class= "nav__item"><a href="index.html#work" class= "nav_link">My Work</a></li>
+               <li class= "nav__item"><a href="index.html#request" class= "nav_link">Leave a Request</a></li>
+             </ul> 
+
+         </nav>
+     </header>
+
+
+     <section class="intro" >
+        <h1 class="section__title section__title--intro">
+          <strong> Online Journal</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">An Authentication Project. </p>
+        <!-- crop that picture of you in front of the beatles-->
+        <img src="img/portfolio-01.jpg" alt=""  class="intro__img" >
+    </section>
+
+    <div class="portfolio-item-individual">
+        <div class="design-insights-background">
+        <h3 class="Design-insights-color">Design Insights</h3>
+        <p>
+            This project served as practice, to improve my ability 
+            to handle login requests using Node.js and JSON web tokens(JWT)
+             and as a result is not UI intensive. It is subject to updates however...
+            <ul>
+            
+                    
+                <li> The front-end consists of a simple centered 
+                    form element for login and another form element upon login, 
+                    to submit new journal entries into the database.</li>
+                    <br>
+               <br>
+
+               <li>It also consisted of a page for viewing and deleting posts, 
+                   which had to be authorized before viewing.</li>
+
+                   <br>
+               <br>
+                <li>For the back-end, passwords
+                     were stored in the database as hashed strings (to improve app security),
+                      courtesy of the  Bcrypt package. </li>
+                      <br>
+               <br>
+            </ul>
+           
+        </p>
+
+         <a href="index.html#home"><img src="img/portfolio-details.jpg" alt="" class="portfolio__img-large"></a>
+         
+
+        <!--once you register the landing page, you come and put it in the href-->
+         <div class="button-blocker"><a href="index.html#work"  class="go-to-site">Go to Website</a></div>
+        
+        </div>
+    </div>
+
+         <div class="workflow-title"> <h3>Workflow</h3> </div>
+        <div class="workflow-paragraph">
+         
+       
+         <p>
+           
+         <ul>
+             <li>I wrote code for the server and three endpoints, one for registering, one for logging in and one to see posts from the site.
+            I pushed this code up to my repository on github onto my master branch.Next, I made use of the POSTMAN tool to call 
+            my API endpoints. I setup a new  database cluster on MongoDB atlas, 
+            to store and update information from my endpoints.
+        </li> 
+       
+               
+               <br>
+               <br>
+         
+             <li>
+               After connecting the database to my back-end code, 
+                I created a schema for my data using Mongoose package, 
+                making it accept name, email, password and data information.
+            </li>
+        
+                   <br>
+                   <br>
+               
+                      <li>
+                    The next phase involved parsing the register endpoint for name, email 
+                and password information,  
+                and catching errors in this process. I did this by using a try-catch block
+                 which would send back the appropriate error codes.
+                </li>
+                      <br>
+                      <br>
+                 <!--I THEN MOVED ON TO HASHING PASSWORDS AND VALIDATING USERS -->
+                
+                     <li>
+                     Next I made use of the Joi package for validation, using the Joi library's 
+                 validate method in my already existing schema. I tested the new validation
+                  conditions using POSTMAN. I made a second git commit to master to overwrite
+               my previous one.
+            </li>
+           
+                     <br>
+                     <br>
+                <li>
+                Bcrypt js was the next package I used, to hash user passwords, 
+               as opposed to storing them directly on the database. Bcrypt was setup improperly
+               and so I had to perform fetch and merge operations 
+               from the master branch on my Git repository to
+                continue from the last working version of the code.
+                 I used an  async function and await expression on the bcrypt method
+                 to pass tests successfully. 
+            </li>
+                   <br>
+                   <br>
+                    <li> 
+                    Lastly, JSON web tokens were introduced to the project to issue users tokens
+               upon login.  The token was made to expire within an hour.
+               token validation was implemented as a middleware  on the posts route,
+               and the final commit was made to the master branch.
+            </li>
+        </ul>
+            </p>
+        
+    </div>
+  
+   </div>
+   </div>
+    <!--Footer, come back and specify the right pages, once youve set them up-->
+    <footer class="footer">
+        <strong>CONTACT ME:</strong> 
+            <br>
+        <a href="mailto:dagogouranta@gmail.com" class="footer-link" >
+            <span > <input type="text"  readonly  id ="clippy" value="dagogouranta@gmail.com"></span>  
+        </a>
+        <span class="clipboard-icon" ><i class="far fa-clipboard" ></i></span>
+        <ul class="social-list">
+            <li class="social-list__item"><a href="https://github.com" class="social-list__link"><i class="fab fa-github"></i></a><div class="slideout"><a href="https://github.com" >github</a></div></li>
+            <li class="social-list__item"><a href="https://linkedin.com" class="social-list__link"><i class="fab fa-linkedin"></i></a><div class="slideout"><a  href="https://linkedin.com">linkedin</a></div></li>
+            <li class="social-list__item"><a href="https://youtube.com" class="social-list__link"> <i class="fab fa-youtube"></i></a><div class="slideout"><a href="https://youtube.com" >youtube</a> </div></li>
+            
+        </ul>
+    </footer>
+ 
+</body>
+
+</html>
