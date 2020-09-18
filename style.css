@@ -663,7 +663,11 @@ margin-bottom: .25em;
     padding:0.9rem 0.95rem;
     font-size:1.3rem;
 }
-
+@media(max-width:400px){
+ .textholder-area{
+   min-width:98%;
+ }
+}
 
 
 
@@ -858,7 +862,7 @@ margin-bottom: .25em;
 }
 @media(max-width:1000px){
     #clippy{
-        font-size:1.5rem;
+        font-size:1.3rem;
     }
 }
 
