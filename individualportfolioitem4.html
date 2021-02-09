@@ -13,7 +13,7 @@
         <script src="portfolio-item.js"></script>
         <meta charset="UTF-8">
         <meta name= "viewport" content="width=device-width" initial scale="1.0">
-        <title>My Work | Chat Network</title>
+        <title>My Work | Proshop </title>
         
     </head>
     <body>
@@ -42,48 +42,46 @@
 
      <section class="intro" >
         <h1 class="section__title section__title--intro">
-          <strong> Chat Network</strong>
+          <strong>Pro Shop(Tech Store)</strong>
         </h1>
-        <p class="section__subtitle section__subtitle--intro">A Multi-Room Chat App. </p>
+        <p class="section__subtitle section__subtitle--intro">A Fully Functional E-commerce store </p>
         <!-- crop that picture of you in front of the beatles-->
-        <img src="img/chat-app-preview.jpg" alt=""  class="intro__img" >
+        <img src="img/proshop-preview.jpg" alt=""  class="intro__img" >
     </section>
 
     <div class="portfolio-item-individual">
         <div class="design-insights-background">
         <h3 class="Design-insights-color">Design Insights</h3>
         <p>
-          <!--  This project served as practice, to improve my ability 
+            <!--This project served as practice, to improve my ability 
             to handle login requests using Node.js and JSON web tokens(JWT)
              and as a result is not UI intensive. It is subject to updates however...-->
             <ul>
             
                     
-                <li> This simplistic app works as follows: Users are first greeted with a join screen ,
-                     requesting a particular chat room the name they want to be represented by in the chat room.  Messages can then be sent, with real time replies and from other users. Upon refresh , the entire chat box clears.
-                </li>
+                <li> This is a fully functioning e-commerce store for the sale of electronic goods. It uses a very minimalistic navy and white design.
+                     The home page of the site consists of a product carousel of top products, directly below a search bar and search button.</li>
                     <br>
                <br>
 
-               <li>Upon joining, they are greeted with a welcome message by a default admin user ,
-                    and all other users in that particular chat room is made aware of their presence via a broadcast message.
-                </li>
+               <li>The home screen and product details are visible to all site visitors, but to commence the purchase process , one must be signed up to the site. 
+                   Once signed in , users are able to view their cart , proceed to checkout and pay via PayPal. </li>
 
-                <br>
-                <br>
-                <li>Messages can then be sent, with real time replies from other users.
-                     Upon refresh , the entire chat box clears. To use the app, please click the image or button below: </li>
+                   <br>
+               <br>
+                <li>There is also an admin login screen with extra features for shop owners. Extra features for admins include screens for fulfilling orders, tracking inventory
+                     and sending messages to regular users. Click the image/button below to view the full website. </li>
                       <br>
-               <br> 
+               <br>
             </ul>
            
         </p>
 
-         <a href="https://goofy-einstein-ec2b2b.netlify.app"><img src="img/chat-app-full.jpg" alt="" class="portfolio__img-large"></a>
+         <a href="https://dagogo-ecommerce-app.herokuapp.com"><img src="img/proshop-full.jpg" alt="" class="portfolio__img-large"></a>
          
 
         <!--once you register the landing page, you come and put it in the href-->
-         <div class="button-blocker"><a href="https://goofy-einstein-ec2b2b.netlify.app"  class="go-to-site">Go to Website</a></div>
+         <div class="button-blocker"><a href="https://dagogo-ecommerce-app.herokuapp.com"  class="go-to-site">Go to Website</a></div>
         
         </div>
     </div>
@@ -95,8 +93,7 @@
          <p>
            
          <ul>
-             <li> This app was created using react js for the front end , node and express js for the backend. 
-                 Details for names and rooms are passed using query parameters as opposed to traditionally using props.
+             <li>Fundamental technologies used include react, redux ,json web tokens, mongoose and MongoDB.
         </li> 
        
                
@@ -104,49 +101,37 @@
                <br>
          
              <li>
-                React scroll to bottom library used here to allow the last sent chat bubble to always be visible.
-                React Emojify (library) is also made use of here to convert typed symbols to emojis in the input container.
+                Each screen that the end user sees is a react component ,linked via the react router package. Redux is used here to maintain state across components(global level state) and ensure that all changes to
+                 database information have a defined flow through the actions to the reducers and finally the store.
             </li>
         
                    <br>
                    <br>
                
                       <li>
-                        Socket.io was used on the backend and socket.io-client on the front end . 
-                        On triggering of certain events the socket connections were made to broadcast
-                         a message to all users / emit to all users minus the sender . Please visit the app to use it .
+                        Components such as the golden stars used for rating maintain local state 
+                        as the rating information is particular to that component. 
                 </li>
                       <br>
                       <br>
-                 <!--I THEN MOVED ON TO HASHING PASSWORDS AND VALIDATING USERS 
+                 <!--I THEN MOVED ON TO HASHING PASSWORDS AND VALIDATING USERS -->
                 
                      <li>
-                     Next I made use of the Joi package for validation, using the Joi library's 
-                 validate method in my already existing schema. I tested the new validation
-                  conditions using POSTMAN. I made a second git commit to master to overwrite
-               my previous one.
+                        The backend makes use of authorisation middleware which calls on the json web tokens library to verify and authorise users when they hit certain endpoints. Upon user sign up their passwords are hashed using 
+                        the brcypt package and their data is pushed to the mongoDB database via the object relational mapper mongoose.
             </li>
            
                      <br>
                      <br>
                 <li>
-                Bcrypt js was the next package I used, to hash user passwords, 
-               as opposed to storing them directly on the database. Bcrypt was setup improperly
-               and so I had to perform fetch and merge operations 
-               from the master branch on my Git repository to
-                continue from the last working version of the code.
-                 I used an  async function and await expression on the bcrypt method
-                 to pass tests successfully. 
+                    Mongoose is also responsible for creating schemas that direct how the database will accept data for new orders, users and products. 
             </li>
                    <br>
                    <br>
                     <li> 
-                    Lastly, JSON web tokens were introduced to the project to issue users tokens
-               upon login.  The token was made to expire within an hour.
-               token validation was implemented as a middleware  on the posts route,
-               and the final commit was made to the master branch.
+                        Finally, the payments were taken care of by including a PayPal SDK script on the page where the user makes payments and fetching PayPal client ID for the recipient from the backend.
             </li>
-        </ul> -->
+        </ul>
             </p>
         
     </div>

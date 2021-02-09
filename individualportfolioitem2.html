@@ -13,7 +13,7 @@
         <script src="portfolio-item.js"></script>
         <meta charset="UTF-8">
         <meta name= "viewport" content="width=device-width" initial scale="1.0">
-        <title>My Work | Chat Network</title>
+        <title>My Work | Cinnamon Bank</title>
         
     </head>
     <body>
@@ -42,48 +42,50 @@
 
      <section class="intro" >
         <h1 class="section__title section__title--intro">
-          <strong> Chat Network</strong>
+          <strong> Cinnamon Bank</strong>
         </h1>
-        <p class="section__subtitle section__subtitle--intro">A Multi-Room Chat App. </p>
+        <p class="section__subtitle section__subtitle--intro">Web Design for a Virtual Bank. </p>
         <!-- crop that picture of you in front of the beatles-->
-        <img src="img/chat-app-preview.jpg" alt=""  class="intro__img" >
+        <img src="img/cinnamon-preview.jpg" alt=""  class="intro__img" >
     </section>
 
     <div class="portfolio-item-individual">
         <div class="design-insights-background">
         <h3 class="Design-insights-color">Design Insights</h3>
         <p>
-          <!--  This project served as practice, to improve my ability 
+            <!--This project served as practice, to improve my ability 
             to handle login requests using Node.js and JSON web tokens(JWT)
-             and as a result is not UI intensive. It is subject to updates however...-->
+             and as a result is not UI intensive. It is subject to updates however... -->
             <ul>
             
                     
-                <li> This simplistic app works as follows: Users are first greeted with a join screen ,
-                     requesting a particular chat room the name they want to be represented by in the chat room.  Messages can then be sent, with real time replies and from other users. Upon refresh , the entire chat box clears.
-                </li>
+                <li> This is a website design for a digitally oriented start-up bank . 
+                    The website uses a green and black theme and consists of the following sections:
+                     a navigation bar , hero section, 3 individual feature sections, an "our services" section, 
+                    a detailed footer and a sign up page.</li>
                     <br>
                <br>
 
-               <li>Upon joining, they are greeted with a welcome message by a default admin user ,
-                    and all other users in that particular chat room is made aware of their presence via a broadcast message.
-                </li>
+               <li>The navigation bar is fixed and is visible for the entirety of the website. 
+                   When items are clicked, the website scrolls smoothly to the required section
+                    and said section is underlined in the nav bar </li>
 
-                <br>
-                <br>
-                <li>Messages can then be sent, with real time replies from other users.
-                     Upon refresh , the entire chat box clears. To use the app, please click the image or button below: </li>
+                   <br>
+               <br>
+                <li> The image backgrounds and "feature" section colours are the same such that image boundaries are indistinguishable.
+                     All buttons change colour when hovered over and images in adjacent sections are placed at 
+                    alternating sides to keep viewers more engaged. Click the image(or button) below to see the site. </li>
                       <br>
-               <br> 
+               <br>
             </ul>
            
         </p>
 
-         <a href="https://goofy-einstein-ec2b2b.netlify.app"><img src="img/chat-app-full.jpg" alt="" class="portfolio__img-large"></a>
+         <a href="https://agitated-albattani-022e3c.netlify.app"><img src="img/cinnamon-full.jpg" alt="" class="portfolio__img-large"></a>
          
 
         <!--once you register the landing page, you come and put it in the href-->
-         <div class="button-blocker"><a href="https://goofy-einstein-ec2b2b.netlify.app"  class="go-to-site">Go to Website</a></div>
+         <div class="button-blocker"><a href="https://agitated-albattani-022e3c.netlify.app"  class="go-to-site">Go to Website</a></div>
         
         </div>
     </div>
@@ -95,8 +97,8 @@
          <p>
            
          <ul>
-             <li> This app was created using react js for the front end , node and express js for the backend. 
-                 Details for names and rooms are passed using query parameters as opposed to traditionally using props.
+             <li>All pictures are svg (scalable vector graphics) images gotten from unDraw.com’s green theme ,
+                  to maintain resolution at any screen size.
         </li> 
        
                
@@ -104,17 +106,16 @@
                <br>
          
              <li>
-                React scroll to bottom library used here to allow the last sent chat bubble to always be visible.
-                React Emojify (library) is also made use of here to convert typed symbols to emojis in the input container.
+                React components make use of  react's styled components, which integrate css with
+                react and media queries are used to keep the elements responsive at different screen widths.
             </li>
         
                    <br>
                    <br>
                
                       <li>
-                        Socket.io was used on the backend and socket.io-client on the front end . 
-                        On triggering of certain events the socket connections were made to broadcast
-                         a message to all users / emit to all users minus the sender . Please visit the app to use it .
+                        The sign in page is visible when the sign in button is clicked
+                     and a useState hook is used to change the piece of state that determines whether the sign in page should be visible or not . 
                 </li>
                       <br>
                       <br>
